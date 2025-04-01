@@ -1,18 +1,12 @@
 # 2.3MParams-LLM-From-Scratch-Python
 
-<a href="https://colab.research.google.com/drive/1AlnGsNU3BauFhn3ZY6tk71G9ANUAQRtx?usp=sharing">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
-</a>
-
 
 <!-- Cropped Image -->
 <img src="https://i.ibb.co/r56NHtM/1-ox3h-To-PFUWx-Aw-URx-YEXi-Gg-removebg-preview.png" alt="Cropped Image">
 
-Making your own Large Language Model (LLM) is a cool thing that many big companies like Google, Twitter, and Facebook are doing. They release different versions of these models, like 7 billion, 13 billion, or 70 billion. Even smaller communities are doing it too. You might have read blogs or watched videos on creating your own LLM, but they usually talk a lot about theory and not so much about the actual steps and code.
+Making your own Large Language Model (LLM) is a cool thing that many big companies like Google, Twitter, and Facebook are doing. 
 
-This blog is a replicated and a bit more detailed blog of this [REPO](https://github.com/bkitano/llama-from-scratch) created by [Brian Kitano](https://github.com/bkitano) 
-
-In this blog, I’ll try to make an LLM with only 2.3 million parameters, and the interesting part is we won’t need a fancy GPU for it. We’ll follow a [LLaMA 1 Paper](https://arxiv.org/abs/2302.13971) Approach to guide us. Don’t worry; we’ll keep it simple and use a basic dataset so you can see how easy it is to create your own million-parameter LLM.
+In this repo, I’ll try to make an LLM with only 2.3 million parameters, and the interesting part is it won’t need a fancy GPU for it. I've followed  [LLaMA 1 Paper](https://arxiv.org/abs/2302.13971) Approach to guide me. 
 
 ## Table of Contents
 
