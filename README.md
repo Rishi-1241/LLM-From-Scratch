@@ -9,8 +9,6 @@ Making your own Large Language Model (LLM) is a cool thing that many big compani
 In this repo, I’ll try to make an LLM with only 2.3 million parameters, and the interesting part is it won’t need a fancy GPU for it. I've followed  [LLaMA 1 Paper](https://arxiv.org/abs/2302.13971) Approach to guide me. 
 
 ## Table of Contents
-
-- [Prerequisites](#prerequisites)
 - [Understanding the Transformer Architecture of LLaMA](#understanding-the-transformer-architecture-of-llama)
   - [Pre-normalization Using RMSNorm](#pre-normalization-using-rmsnorm)
   - [SwiGLU Activation Function](#swiglu-activation-function)
@@ -27,24 +25,11 @@ In this repo, I’ll try to make an LLM with only 2.3 million parameters, and th
 - [Saving Your Language Model (LLM)](#saving-your-language-model-llm)
 - [Conclusion](#conclusion)
 
-## Prerequisites
-
-Make sure you have a basic understanding of object-oriented programming (**OOP**) and neural networks (**NN**). Familiarity with **PyTorch** will also be helpful in coding.
-
-| Topic               | Video Link                                                |
-|---------------------|-----------------------------------------------------------|
-| OOP                 | [OOP Video](https://www.youtube.com/watch?v=Ej_02ICOIgs&pp=ygUKb29wIHB5dGhvbg%3D%3D) |
-| Neural Network      | [Neural Network Video](https://www.youtube.com/watch?v=Jy4wM2X21u0&pp=ygUbbmV1cmFsIG5ldHdvcmsgcHl0aG9uIHRvcmNo) |
-| Pytorch             | [Pytorch Video](https://www.youtube.com/watch?v=V_xro1bcAuA&pp=ygUbbmV1cmFsIG5ldHdvcmsgcHl0aG9uIHRvcmNo) |
-
 ## Understanding the Transformer Architecture of LLaMA
 
 Before diving into creating our own LLM using the LLaMA approach, it’s essential to understand the architecture of LLaMA. Below is a comparison diagram between the vanilla transformer and LLaMA.
 
-<img src="https://cdn-images-1.medium.com/max/25620/1*nt-ydHhSVsaLXq_HZRaLQA.png" alt="Difference between Transformers and Llama architecture (Llama architecture by Umar Jamil)" style="width: 50%;">
-(Llama architecture by Umar Jamil)
-
-In case you’re not familiar with the vanilla transformer architecture, you can read [this blog](https://medium.com/@fareedkhandev/understanding-transformers-a-step-by-step-math-example-part-1-a7809015150a) for a basic guide.
+<img src="https://cdn-images-1.medium.com/max/25620/1*nt-ydHhSVsaLXq_HZRaLQA.png" alt="Difference between Transformers and Llama architecture " style="width: 50%;">
 
 Let’s look into the essential concepts of LLaMA with a bit more detail:
 
@@ -72,8 +57,6 @@ Rotary Embeddings, or RoPE, is a type of position embedding used in LLaMA. It en
 This is achieved by encoding relative positions through multiplication with a rotation matrix, resulting in decayed relative distances — a desirable feature for natural language encoding. Those interested in the mathematical details can refer to the [RoPE paper](https://arxiv.org/pdf/2104.09864v4.pdf).
 
 In addition to these concepts, the LLaMA paper introduces other significant approaches, including the use of the **AdamW optimizer** with specific parameters, efficient implementations such as the causal [multi-head attention operator](https://facebookresearch.github.io/xformers/components/mha.html) available in the xformers library, and manually implemented backward functions for transformer layers to optimize computation during backward passes.
-
-A special acknowledgment and thanks to [Anush Kumar](https://akgeni.medium.com/) for providing an in-depth explanation of each crucial aspect of LLaMA.
 
 ## Setting the Stage
 
