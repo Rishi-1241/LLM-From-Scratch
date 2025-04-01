@@ -4,7 +4,7 @@
 <!-- Cropped Image -->
 Making your own Large Language Model (LLM) is a cool thing that many big companies like Google, Twitter, and Facebook are doing. 
 
-In this repo, I’ll try to make an LLM with only 2.3 million parameters, and the interesting part is it won’t need a fancy GPU for it. I've followed  [LLaMA 1 Paper](https://arxiv.org/abs/2302.13971) Approach to guide me. 
+In this repo, I’ll try to make an LLM with only 5.3 million parameters, and the interesting part is it won’t need a fancy GPU for it. I've followed  [LLaMA 1 Paper](https://arxiv.org/abs/2302.13971) Approach to guide me. 
 
 ## Understanding the Transformer Architecture of LLaMA
 
